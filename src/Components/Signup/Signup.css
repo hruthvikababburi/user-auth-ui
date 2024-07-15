@@ -121,9 +121,28 @@
     padding: 15px;
     border-radius: 20px;
 }
-
-
-
+.why-us-cont{
+    width:80%;
+    margin: auto;
+}
+.why-us-cont h3{
+    font-size: 25px;
+    padding-top: 25px;
+}
+.why-us-cont ul{
+    list-style-type: none;
+}
+.why-us-cont ul li{
+    padding-top: 15px;
+}
+.why-us-cont ul li h5{
+    font-size: 20px;
+    padding-top: 20px;
+}
+.why-us-cont ul li p{
+    font-size: 16px;
+    padding-top: 15px;
+}
 
 
 
@@ -160,7 +179,7 @@
         flex-direction: column;
         justify-content: space-between;
         align-items: flex-start;
-        width:80%;
+        width:85%;
         margin:auto;
         padding-top: 50px;
     }
@@ -177,7 +196,7 @@
         margin-top: 30px;
     }
     .login-option-cont h5{
-        font-size: 20px;
+        font-size: 18px;
         padding-top: 20px;
     }
     .login-option-cont span{
@@ -186,6 +205,28 @@
     }
     .login-option-cont p{
         font-size: 16px;
+        padding-top: 15px;
+    }
+    .why-us-cont{
+        width:85%;
+        margin: auto;
+    }
+    .why-us-cont h3{
+        font-size: 20px;
+        padding-top: 25px;
+    }
+    .why-us-cont ul{
+        list-style-type: none;
+    }
+    .why-us-cont ul li{
+        padding-top: 15px;
+    }
+    .why-us-cont ul li h5{
+        font-size: 18px;
+        padding-top: 20px;
+    }
+    .why-us-cont ul li p{
+        font-size: 14px;
         padding-top: 15px;
     }
     

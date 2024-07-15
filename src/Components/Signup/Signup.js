@@ -66,7 +66,7 @@ export default function Signup() {
             </div>
             <div className='each-input'>
                 <label>Password * </label>
-                <input type="password" name="user_password" placeholder="********" value={formData.user_password} onChange={handleChange} required />
+                <input type="password" name="user_password" placeholder="" value={formData.user_password} onChange={handleChange} required />
             </div>
             <button type="submit">Sign Up</button>
         </form>
@@ -75,6 +75,28 @@ export default function Signup() {
             <p>Welcome back! Log in to access your personalized dashboard and manage your account seamlessly.</p>
             <button>Log In Now!</button>
         </div>
+      </div>
+      <div className='why-us-cont'>
+        <h3>Why Choose UserVerse?</h3>
+        <ul>
+            <li>
+                <h5>User Management</h5>
+                <p>Easily manage profiles, roles, and permissions.</p>
+            </li>
+            <li>
+                <h5>Secure Authentication</h5>
+                <p>Enjoy secure signup and login with 2FA.</p>
+            </li>
+            <li>
+                <h5>Customizable Dashboard</h5>
+                <p>Visualize key data with personalized charts and graphs.</p>
+            </li>
+            <li>
+                <h5>Real-Time Communication</h5>
+                <p>Stay connected with built-in messaging and notifications.</p>
+            </li>
+        </ul>
+
       </div>
     </div>
   )
