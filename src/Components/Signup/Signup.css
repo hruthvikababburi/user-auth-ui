@@ -1,5 +1,5 @@
 .cont{
-    height: 100vh;
+    height: auto;
     background-image: url("https://img.freepik.com/free-vector/abstract-blue-light-pipe-speed-zoom-black-background-technology_1142-9980.jpg?t=st=1721044541~exp=1721048141~hmac=182f00e5efd58f0de8b4346cfa11a503d1cb9a64761b09d83f35043ba47f43ac&w=2000");
     background-size: cover;
     background-position: center;
@@ -40,16 +40,56 @@
     width:80%;
     margin:auto;
     padding-top: 50px;
+    padding-bottom: 50px;
 }
 .signup-form{
-
+    background-color: #3497aa;
+    color: #000000;
+    padding: 40px;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.signup-form button{
+    background-color: transparent;
+    color: #000000;
+    border: 1px solid #000000;
+    padding: 15px;
+    border-radius: 20px;
+    font-weight: bolder;
+    cursor: pointer;
+    transition: background-color 0.5s ease, color 0.5s ease, border 0.5s ease;
+}
+.signup-form button:hover{
+    background-color: #000000;
+    color:#3497aa;
+    border: none;
+    padding: 15px;
+    border-radius: 20px;
 }
 .each-input{
     display: flex;
     flex-direction: column;
+    margin-bottom: 20px;
 }
-.login-option-cont{
+.each-input input{
+    background-color: transparent;
+    color: #000000;
+    border: 1px solid #000000;
+    margin-top: 5px;
+    padding: 5px;
+    border-radius: 4px;
+    outline: none;
+}
+.each-input input::placeholder{
+    color: #215964;
+}
 
+.login-option-cont{
+    margin-left: 40px;
 }
 .login-option-cont h5{
     font-size: 20px;
@@ -63,6 +103,30 @@
     font-size: 16px;
     padding-top: 15px;
 }
+.login-option-cont button{
+    background-color: transparent;
+    color: #3497aa;
+    border: 1px solid #3497aa;
+    padding: 15px;
+    border-radius: 20px;
+    font-weight: bolder;
+    cursor: pointer;
+    transition: background-color 0.5s ease, color 0.5s ease, border 0.5s ease;
+    margin-top: 15px;
+}
+.login-option-cont button:hover{
+    background-color: #3497aa;
+    color:#000000;
+    border: none;
+    padding: 15px;
+    border-radius: 20px;
+}
+
+
+
+
+
+
 
 @media (max-width: 720px) {
     .cont{
@@ -95,16 +159,22 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        align-items: center;
+        align-items: flex-start;
         width:80%;
         margin:auto;
         padding-top: 50px;
     }
     .signup-form{
-        
+        background-color: #3497aa;
+        color: #000000;
+        padding: 40px;
+        border: none;
+        border-radius: 10px;
     }
-    .login-option-cont{
     
+    .login-option-cont{
+        margin-left: 0px;
+        margin-top: 30px;
     }
     .login-option-cont h5{
         font-size: 20px;
