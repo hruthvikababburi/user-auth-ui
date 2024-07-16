@@ -68,24 +68,24 @@ export default function Signup() {
       <div className='signup-cont'>
         <form className='signup-form' onSubmit={handleSubmit}>
             <div className='each-input'>
-                <label>First Name * </label>
-                <input type="text" name="user_firstname" placeholder="e.g., Mallika" value={formData.user_firstname} onChange={handleChange} required />
+                <label htmlFor='signupFName'>First Name * </label>
+                <input id='signupFName' type="text" name="user_firstname" placeholder="e.g., Mallika" value={formData.user_firstname} onChange={handleChange} required />
             </div>
             <div className='each-input'>
-                <label>Last Name </label>
-                <input type="text" name="user_lastname" placeholder="e.g., Singh" value={formData.user_lastname} onChange={handleChange} />
+                <label htmlFor='signupLName'>Last Name </label>
+                <input id='signupLName' type="text" name="user_lastname" placeholder="e.g., Singh" value={formData.user_lastname} onChange={handleChange} />
             </div>
             <div className='each-input'>
-                <label>Email Address * </label>
-                <input type="email" name="user_email" placeholder="e.g., mallikasingh123@gmail.com" value={formData.user_email} onChange={handleChange} required />
+                <label htmlFor='signupEmail'>Email Address * </label>
+                <input id='signupEmail' type="email" name="user_email" placeholder="e.g., mallikasingh123@gmail.com" value={formData.user_email} onChange={handleChange} required />
             </div>
             <div className='each-input'>
-                <label>Phone Number * </label>
-                <input type="text" name="user_phone" placeholder="e.g., 1234567890" value={formData.user_phone} onChange={handleChange} required />
+                <label htmlFor='signupPhone'>Phone Number * </label>
+                <input id='signupPhone' type="text" name="user_phone" placeholder="e.g., 1234567890" value={formData.user_phone} onChange={handleChange} required />
             </div>
             <div className='each-input'>
-                <label>Password * </label>
-                <input type="password" name="user_password" placeholder="" value={formData.user_password} onChange={handleChange} required />
+                <label htmlFor='signupPassword'>Password * </label>
+                <input id='signupPassword' type="password" name="user_password" placeholder="" value={formData.user_password} onChange={handleChange} required />
             </div>
             <button type="submit">Sign Up</button>
             <p className='error-msg'>{errorMsg}</p>

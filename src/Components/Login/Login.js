@@ -43,12 +43,12 @@ export default function Login() {
         <h3>User Login</h3>
         <form className='login-form' onSubmit={handleSubmit}>
               <div className='login-input'>
-                  <label>Email Address * </label>
-                  <input type="email" name="user_email" placeholder="e.g., mallikasingh123@gmail.com" value={loginData.user_email} onChange={handleChange} required />
+                  <label htmlFor='loginEmail'>Email Address * </label>
+                  <input id='loginEmail' type="email" name="user_email" placeholder="e.g., mallikasingh123@gmail.com" value={loginData.user_email} onChange={handleChange} required />
               </div>
               <div className='login-input'>
-                  <label>Password * </label>
-                  <input type="password" name="user_password" placeholder="*********" value={loginData.user_password} onChange={handleChange} required />
+                  <label htmlFor='loginPassword'>Password * </label>
+                  <input id='loginPassword' type="password" name="user_password" placeholder="*********" value={loginData.user_password} onChange={handleChange} required />
               </div>
               <button type="submit">Login</button>
               <p className='login-error-msg'>{loginError}</p>
