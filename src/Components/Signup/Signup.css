@@ -52,6 +52,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 30%;
 }
 .signup-form button{
     background-color: transparent;
@@ -90,6 +91,7 @@
 
 .login-option-cont{
     margin-left: 40px;
+    width: 30%;
 }
 .login-option-cont h5{
     font-size: 20px;
@@ -143,7 +145,13 @@
     font-size: 16px;
     padding-top: 15px;
 }
-
+.last-cont{
+    width: 80%;
+    margin: auto;
+    font-size: 25px;
+    margin-top: 80px;
+    padding-bottom: 50px;
+}
 
 
 
@@ -189,11 +197,13 @@
         padding: 40px;
         border: none;
         border-radius: 10px;
+        width: auto;
     }
     
     .login-option-cont{
         margin-left: 0px;
         margin-top: 30px;
+        width: auto;
     }
     .login-option-cont h5{
         font-size: 18px;
@@ -228,6 +238,13 @@
     .why-us-cont ul li p{
         font-size: 14px;
         padding-top: 15px;
+    }
+    .last-cont{
+        width: 85%;
+        margin: auto;
+        font-size: 20px;
+        margin-top: 80px;
+        padding-bottom: 50px;
     }
     
 }

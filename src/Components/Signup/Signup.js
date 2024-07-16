@@ -20,7 +20,7 @@ export default function Signup() {
             user_zipcode:'500072'
         }
         try{
-            const response = await axios.post('',payload)
+            const response = await axios.post('https://syoft.dev/Api/user_registeration/api/user_registeration',payload)
             console.log(response.data)
 
         }
@@ -97,6 +97,9 @@ export default function Signup() {
             </li>
         </ul>
 
+      </div>
+      <div className='last-cont'>
+        <h5>Join thousands of users who rely on UserVerse to achieve their goals. Sign up or log in now to get started!</h5>
       </div>
     </div>
   )
