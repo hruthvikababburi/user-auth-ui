@@ -152,6 +152,12 @@
     margin-top: 80px;
     padding-bottom: 50px;
 }
+.error-msg{
+    font-size: small;
+    color: #95080f;
+    font-weight: bold;
+    margin-top: 20px;
+}
 
 
 

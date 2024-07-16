@@ -9,6 +9,7 @@ export default function Signup() {
         user_password: '',
         user_phone: ''
     })
+    const [errorMsg,setErrorMsg] = useState('')
     const handleChange=(e)=>{
         setFormData({...formData,[e.target.name]:e.target.value})
     }
@@ -21,11 +22,13 @@ export default function Signup() {
         }
         try{
             const response = await axios.post('https://syoft.dev/Api/user_registeration/api/user_registeration',payload)
-            console.log(response.data)
+            console.log(response.data.msg)
+            setErrorMsg(response.data.msg);
 
         }
-        catch(error){
-            console.log(error)
+        catch(e){
+            console.log(e.msg)
+            setErrorMsg('An error occurred');
         }
     }
 
@@ -69,6 +72,7 @@ export default function Signup() {
                 <input type="password" name="user_password" placeholder="" value={formData.user_password} onChange={handleChange} required />
             </div>
             <button type="submit">Sign Up</button>
+            <p className='error-msg'>{errorMsg}</p>
         </form>
         <div className='login-option-cont'>
             <h5>Already a Member?</h5>
