@@ -8,7 +8,7 @@ export default function Dashboard() {
   const navigate = useNavigate()
   const handleLogout=()=>{
     localStorage.removeItem('user')
-    navigate('/Signup')
+    navigate('/Login')
   }
   const [userData,setUserData]= useState(null)
 
