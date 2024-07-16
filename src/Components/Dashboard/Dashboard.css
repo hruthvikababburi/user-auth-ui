@@ -1,0 +1,74 @@
+.dashboard-cont{
+    background-image: url('https://img.freepik.com/free-vector/seamless-gold-circle-grid-pattern-black-background_53876-118452.jpg?t=st=1721106176~exp=1721109776~hmac=bbf2765c48e74fe9c7cd9d66c7c1981ad5d0a539f2571e1eaaa997a51c0fe280&w=1060');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: beige;
+}
+.d-context-cont{
+    width:80%;
+    margin:auto;
+    
+    padding-top:100px;
+}
+.common-cont{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+h1{
+    font-size: 43px;
+}
+.icon{
+    margin-left: 20px;
+    font-size: 60px;
+}
+ h3{
+    font-size: 25px;
+    padding-top: 25px;
+}
+h5{
+    font-size: 20px;
+    padding-top: 20px;
+}
+.d-context-cont span{
+    font-size: 18px;
+    padding-top: 20px;
+}
+p{
+    font-size: 16px;
+    padding-top: 15px;
+}
+ul{
+    list-style-type: none;
+}
+
+@media (max-width:720px) {
+    .dashboard-cont{
+        height: auto;
+    }
+    .d-context-cont{
+        width: 85%;
+        
+    }
+    h1{
+        font-size: 30px;
+    }
+    h3{
+        font-size: 20px;
+        padding-top: 25px;
+    }
+    h5{
+        font-size: 18px;
+        padding-top: 20px;
+    }
+    .d-context-cont span{
+        font-size: 16px;
+        padding-top: 20px;
+    }
+     p{
+        font-size: 14px;
+        padding-top: 15px;
+    }
+}
