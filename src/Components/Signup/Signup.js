@@ -1,6 +1,7 @@
 import React,{useState} from 'react'
 import './Signup.css'
 import axios from 'axios'
+import {useNavigate} from 'react-router-dom'
 export default function Signup() {
     const [formData,setFormData] = useState({
         user_firstname:'',
@@ -13,6 +14,7 @@ export default function Signup() {
     const handleChange=(e)=>{
         setFormData({...formData,[e.target.name]:e.target.value})
     }
+    const navigate = useNavigate()
     const handleSubmit=async(e)=>{
         e.preventDefault();
         const payload = {
@@ -20,15 +22,29 @@ export default function Signup() {
             user_city:'Hyderabad',
             user_zipcode:'500072'
         }
-        try{
-            const response = await axios.post('https://syoft.dev/Api/user_registeration/api/user_registeration',payload)
-            console.log(response.data.msg)
-            setErrorMsg(response.data.msg);
 
-        }
-        catch(e){
-            console.log(e.msg)
-            setErrorMsg('An error occurred');
+        try {
+            const response = await axios.post('https://syoft.dev/Api/user_registeration/api/user_registeration', payload);
+            console.log(response.data)
+            if (response.data && response.data.status) {
+                // Automatically log in the user after successful sign-up
+                const loginResponse = await axios.post('https://syoft.dev/Api/userlogin/api/userlogin', {
+                    user_email: formData.user_email,
+                    user_password: formData.user_password
+                });
+
+                // Store user info in local storage and redirect to dashboard
+                localStorage.setItem('user', JSON.stringify(loginResponse.data));
+                console.log(localStorage.data)
+                navigate('/dashboard');
+                setErrorMsg('')
+                
+            } else {
+                setErrorMsg('User already exists or there was an issue with sign-up');
+            }
+        } catch (error) {
+            console.error(error);
+            setErrorMsg('An error occurred during sign-up');
         }
     }
 
@@ -56,8 +72,8 @@ export default function Signup() {
                 <input type="text" name="user_firstname" placeholder="e.g., Mallika" value={formData.user_firstname} onChange={handleChange} required />
             </div>
             <div className='each-input'>
-                <label>Last Name * </label>
-                <input type="text" name="user_lastname" placeholder="e.g., Singh" value={formData.user_lastname} onChange={handleChange} required />
+                <label>Last Name </label>
+                <input type="text" name="user_lastname" placeholder="e.g., Singh" value={formData.user_lastname} onChange={handleChange} />
             </div>
             <div className='each-input'>
                 <label>Email Address * </label>
