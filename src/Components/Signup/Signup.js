@@ -1,7 +1,7 @@
 import React,{useState} from 'react'
 import './Signup.css'
 import axios from 'axios'
-import {useNavigate} from 'react-router-dom'
+import {Link, useNavigate} from 'react-router-dom'
 export default function Signup() {
     const [formData,setFormData] = useState({
         user_firstname:'',
@@ -93,7 +93,8 @@ export default function Signup() {
         <div className='login-option-cont'>
             <h5>Already a Member?</h5>
             <p>Welcome back! Log in to access your personalized dashboard and manage your account seamlessly.</p>
-            <button>Log In Now!</button>
+            
+            <Link to='/Login'><button>Log In Now!</button></Link>
         </div>
       </div>
       <div className='why-us-cont'>

@@ -13,6 +13,12 @@
     text-align: center;
     margin-bottom: 30px;
 }
+.login-c{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 .login-form{
     background-color: transparent;
 
@@ -45,6 +51,25 @@
     border-radius: 20px;
     
 }
+.signup{
+    background-color: transparent;
+    color: #cb0385;
+    border: 1px solid #cb0385;
+    padding: 15px;
+    border-radius: 20px;
+    font-weight: bolder;
+    cursor: pointer;
+    transition: background-color 0.5s ease, color 0.5s ease, border 0.5s ease;
+    margin-top: 10px;
+}
+.signup:hover{
+    background-color: #cb0385;
+    color:#000000;
+    border: none;
+    padding: 15px;
+    border-radius: 20px;
+    
+}
 .login-input{
     display: flex;
     flex-direction: column;
@@ -64,6 +89,12 @@ input::placeholder{
     color: #215964;
 }
 .login-error-msg{
+    font-size: small;
+    color: #cb0385;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.signup-text{
     font-size: small;
     color: #cb0385;
     font-weight: bold;

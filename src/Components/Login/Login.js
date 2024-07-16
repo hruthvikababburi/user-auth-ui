@@ -34,9 +34,12 @@ export default function Login() {
     setLoginError('An error occured during login!')
    }
   }
+  const handleSignup=()=>{
+    navigate('/Signup')
+  }
   return (
     <div className='login-cont'>
-      <div>
+      <div className='login-c'>
         <h3>User Login</h3>
         <form className='login-form' onSubmit={handleSubmit}>
               <div className='login-input'>
@@ -50,6 +53,8 @@ export default function Login() {
               <button type="submit">Login</button>
               <p className='login-error-msg'>{loginError}</p>
           </form>
+          <p className='signup-text'>Don't have an account?</p>
+          <button className='signup' onClick={handleSignup}>Sign up</button>
       </div>
       
     </div>
