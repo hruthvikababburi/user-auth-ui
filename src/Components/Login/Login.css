@@ -1,0 +1,81 @@
+.login-cont{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('https://img.freepik.com/free-vector/background-abstract-line-digital-gradient-luxury_483537-2367.jpg?t=st=1721111022~exp=1721114622~hmac=b5a37eaacfd53c5e82376fcee675788476be2812f047b54f4ff7e71bc533fd26&w=2000');
+    background-position: center;
+    background-size: cover;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.login-cont h3{
+    color:#ee52b7;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.login-form{
+    background-color: transparent;
+
+    color: #ee52b7;
+    padding: 40px;
+    border: 1px solid #ee52b7;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+.login-form button{
+    background-color: transparent;
+    color: #ee52b7;
+    border: 1px solid #ee52b7;
+    padding: 15px;
+    border-radius: 20px;
+    font-weight: bolder;
+    cursor: pointer;
+    transition: background-color 0.5s ease, color 0.5s ease, border 0.5s ease;
+    margin-top: 30px;
+}
+.login-form button:hover{
+    background-color: #ee52b7;
+    color:#000000;
+    border: none;
+    padding: 15px;
+    border-radius: 20px;
+    
+}
+.login-input{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.login-input input{
+    background-color: transparent;
+    border: 1px solid #ee52b7;
+    color: #ee52b7;
+    margin-top: 5px;
+    padding: 5px;
+    border-radius: 4px;
+    outline: none;
+    
+}
+input::placeholder{
+    color: #215964;
+}
+.login-error-msg{
+    font-size: small;
+    color: #cb0385;
+    font-weight: bold;
+    margin-top: 20px;
+}
+@media (max-width:720px) {
+    .login-form{
+        width: 40%;
+        padding: 40px;
+        border: none;
+        border-radius: 10px;
+        width: auto;
+    }
+    
+}
