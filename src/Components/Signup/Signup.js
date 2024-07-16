@@ -94,7 +94,7 @@ export default function Signup() {
             <h5>Already a Member?</h5>
             <p>Welcome back! Log in to access your personalized dashboard and manage your account seamlessly.</p>
             
-            <Link to='/Login'><button>Log In Now!</button></Link>
+            <Link to='/login'><button>Log In Now!</button></Link>
         </div>
       </div>
       <div className='why-us-cont'>

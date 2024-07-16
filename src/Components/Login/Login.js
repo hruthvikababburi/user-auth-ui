@@ -35,7 +35,7 @@ export default function Login() {
    }
   }
   const handleSignup=()=>{
-    navigate('/Signup')
+    navigate('/signup')
   }
   return (
     <div className='login-cont'>
